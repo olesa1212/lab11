@@ -12,10 +12,10 @@ void main() {
         System.out.println("Введите телефон:");
         String tel = scan1.nextLine();
         System.out.println("Введите курс:");
-        String kurs = scan1.nextLine();
+        String k = scan1.nextLine();
         System.out.println("Введите факультет:");
         String fac = scan1.nextLine();
-        arr[i] = new Student(age, fio, tel, kurs, fac, date);
+        arr[i] = new Student(age, fio, tel, k, fac, date);
     }
     System.out.println();
     for(int i = 0; i < arr.length; i++){
@@ -53,12 +53,12 @@ class Person{
     }
 }
 class Student extends Person{
-    public String kurs;
+    public String k;
     public String fac;
     private int date;
-    Student(int age, String fio, String tel, String kurs, String fac, int date){
+    Student(int age, String fio, String tel, String k, String fac, int date){
         super(age, fio, tel);
-        this.kurs = kurs;
+        this.k = k;
         this.fac = fac;
         this.date = date;
     }
